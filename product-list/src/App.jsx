@@ -24,11 +24,11 @@ const App = () => {
   ]
 
   return (
-    <>
+    <div className="container">
       <Goods
         products={productsArray}
       />
-    </>
+    </div>
   )
 }
 
