@@ -2,12 +2,12 @@ import { useContext } from "react";
 import context from "../context/context";
 
 const PlanetItem = () => {
-    const { planets } = useContext(context);
+    const { filteredPlanets } = useContext(context);
 
   return (
     <>
       {/* Map through the `planets` data and render details for each planet */}
-      {planets.map(
+      {filteredPlanets.map(
         ({
           id,
           name,
